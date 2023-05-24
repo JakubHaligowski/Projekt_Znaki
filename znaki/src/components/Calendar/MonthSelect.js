@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import MonthContext from "./MonthContext";
 import { ReactComponent as Arrow } from "../../icons/Arrow3.svg";
-import "./Calendar.css";
+
 
 function MonthSelect() {
   const { monthNumber, setMonthNumber } = useContext(MonthContext);

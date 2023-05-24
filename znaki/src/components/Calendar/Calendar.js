@@ -5,7 +5,6 @@ import MonthSelect from "./MonthSelect";
 import { useState } from "react";
 import MonthContext from "./MonthContext.js";
 
-import "./Calendar.css";
 
 
 
