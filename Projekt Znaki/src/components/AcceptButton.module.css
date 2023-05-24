@@ -1,0 +1,21 @@
+.button {
+  width: 216px;
+  height: 58px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items:  center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #F4F5FC;
+
+
+  background: #0957de;
+  border-radius: 12px;
+  filter: drop-shadow(1px 4px 8px rgba(28, 101, 226, 0.61));
+}
+
+.button:hover{
+    background-color: rgb(45, 101, 197);
+    cursor: pointer;
+}
