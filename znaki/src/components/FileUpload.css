@@ -1,3 +1,44 @@
-.formButtons {
-    
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerText {
+    margin-top: 10vh;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+h2 {
+    font-size: 3.24vh;
+}
+
+h4 {
+    font-size: 2vh;
+}
+
+.body2 {
+    margin: 5vh;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fullbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgJakWyciacZdj {
+    width: 31vh;
+}
+
+.logo {
+    width: 10vh;
+    margin: 3vh;
 }

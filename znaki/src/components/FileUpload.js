@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import styles from './FileUpload.css'
+import jakWyciacZdjecie from '../jakWyciacZdjecie.png'
+import logo from '../logoreeai.svg'
 
 function FileUpload() {
   const [file, setFile] = useState(null);
@@ -34,12 +37,28 @@ function FileUpload() {
   };
 
   return (
-    <div>
-      <h1>Przesyłanie pliku PNG</h1>
-      <form className='formButtons' onSubmit={handleSubmit}>
-        <input className='inputButton' type="file" name="file" onChange={handleFileChange} />
-        <button type="submit">Prześlij plik</button>
-      </form>
+    <div className='fullbody'>
+      <div className='header'>
+        <img src={logo} alt='Logo' className='logo'/>
+        <h1 className='headerText'>REEAI - Rozpoznaj znak drogowy</h1>
+      </div>
+      
+      <div className='body'>
+        <div className='body2'>
+          <h2>Przesyłanie pliku PNG</h2>
+          <form className='formButtons' onSubmit={handleSubmit}>
+            <input className='inputButton' type="file" name="file" onChange={handleFileChange} />
+            <button type="submit">Prześlij plik</button>
+          </form>
+          <h4>Poniżej wyświetli się nazwa znaku<br></br>jaką rozpoznał model:</h4>
+        </div>
+
+
+        <div className='body2'>
+          <h3>Jak powinien wyglądać przesłany plik?</h3>
+          <img src={jakWyciacZdjecie} alt='Jak wyciac zdjecie?' className='imgJakWyciacZdj' /> 
+        </div>
+      </div>
     </div>
   );
 }

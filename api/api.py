@@ -20,7 +20,7 @@ def upload_file():
     if file and allowed_file(file.filename):
         # Przyjmujemy tylko pliki PNG
         filename = 'plik.png'
-        file.save('/home/wszleku/ProjektZnaki/git/rozpoznawanie-znakow-drogowych/znakiDrogowe/znaki-drogowe-5/ProjektFrontEnd/src/image/' + filename)
+        file.save('./../znaki/src/image/' + filename)
         print("Plik został przesłany poprawnie")
         return 'Plik został przesłany poprawnie', 200
     else:
